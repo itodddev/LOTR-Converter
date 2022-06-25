@@ -10,7 +10,8 @@ import Foundation
 // these enums need to be in the same order
 
 enum Currency: Double, CaseIterable { // CaseIterable - treat enum as an array
-  case copperPenny = 6400
+  case peso = 6_400_000
+  case copperPenny = 6_400
   case silverPenny = 64
   case silverPiece = 16
   case goldPenny = 4
@@ -30,6 +31,7 @@ enum Currency: Double, CaseIterable { // CaseIterable - treat enum as an array
 }
 
 enum CurrencyText: String, CaseIterable {
+  case peso = "Peso"
   case copperPenny = "Copper Penny"
   case silverPenny = "Silver Penny"
   case silverPiece = "Silver Piece"
@@ -38,6 +40,7 @@ enum CurrencyText: String, CaseIterable {
 }
 
 enum CurrencyImage: String, CaseIterable {
+  case peso = "peso"
   case copperPenny = "copperpenny"
   case silverPenny = "silverpenny"
   case silverPiece = "silverpiece"
